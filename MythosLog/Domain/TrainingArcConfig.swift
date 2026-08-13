@@ -673,7 +673,12 @@ enum TrainingArcConfig {
         switch statKey {
         case .strength: assetPrefix = "Strength"
         case .creativity: assetPrefix = "Creativity"
-        case .intellect, .emotional, .focus, .curiosity, .cardio, .cooking, .reading:
+        case .intellect: assetPrefix = "Intellect"
+        case .emotional: assetPrefix = "Emotional"
+        case .focus: assetPrefix = "Focus"
+        case .cardio: assetPrefix = "Cardio"
+        case .cooking: assetPrefix = "Cooking"
+        case .curiosity, .reading:
             return nil
         }
 
